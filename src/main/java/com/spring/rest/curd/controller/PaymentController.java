@@ -26,6 +26,7 @@ public class PaymentController {
 	
 	@GetMapping("/getTransaction/{vendor}")
 	public PaymentResponse getTransaction(@PathVariable String vendor) {
+		
 		return service.getTx(vendor);
 	}
 }
